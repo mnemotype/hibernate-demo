@@ -28,13 +28,13 @@ public class GetInstructorCoursesDemo {
                 Instructor tempInstructor = session.get(Instructor.class, theId);
                 System.out.println("\n\nAfter getting the instructor\n\n");
                 
-//                System.out.println("\n\n");
-//                System.out.println("Instructor: " + tempInstructor);
-//                System.out.println("\n\n");
-//                
-//                // get course for the instructor
-//                System.out.println("\n\nCourses: " + tempInstructor.getCourses());
-//                System.out.println("\n\n");
+                System.out.println("\n\n");
+                System.out.println("Instructor: " + tempInstructor);
+                System.out.println("\n\n");
+                
+                // get course for the instructor
+                System.out.println("\n\nCourses: " + tempInstructor.getCourses());
+                System.out.println("\n\n");
                 
             tempInstructor.toString();
 
