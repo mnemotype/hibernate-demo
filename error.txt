@@ -1,0 +1,1764 @@
+cd E:\Users\Wojtek\Documents\NetBeansProjects\hibernate-demo1; "JAVA_HOME=C:\\Program Files\\Java\\jdk-11.0.2" cmd /c "\"\"C:\\Netbeans\\java\\maven\\bin\\mvn.cmd\" -Dexec.args=\"-classpath %classpath com.example.demo.onetomany.GetInstructorCoursesDemo\" -Dexec.executable=\"C:\\Program Files\\Java\\jdk-11.0.2\\bin\\java.exe\" -Dexec.classpathScope=runtime -Dmaven.ext.class.path=C:\\Netbeans\\java\\maven-nblib\\netbeans-eventspy.jar -Dfile.encoding=UTF-8 process-classes org.codehaus.mojo:exec-maven-plugin:1.5.0:exec\""
+Scanning for projects...
+                                                                        
+------------------------------------------------------------------------
+Building hibernate-demo 0.0.1-SNAPSHOT
+------------------------------------------------------------------------
+The POM for unknown.binary:mysql-connector-java-5.1.13-bin:jar:SNAPSHOT is missing, no dependency information available
+
+--- maven-resources-plugin:3.1.0:resources (default-resources) @ demo ---
+Using 'UTF-8' encoding to copy filtered resources.
+Copying 1 resource
+Copying 1 resource
+
+--- maven-compiler-plugin:3.8.0:compile (default-compile) @ demo ---
+Changes detected - recompiling the module!
+Compiling 18 source files to E:\Users\Wojtek\Documents\NetBeansProjects\hibernate-demo1\target\classes
+/E:/Users/Wojtek/Documents/NetBeansProjects/hibernate-demo1/src/main/java/com/example/demo/QueryStudentDemo.java: E:\Users\Wojtek\Documents\NetBeansProjects\hibernate-demo1\src\main\java\com\example\demo\QueryStudentDemo.java uses unchecked or unsafe operations.
+/E:/Users/Wojtek/Documents/NetBeansProjects/hibernate-demo1/src/main/java/com/example/demo/QueryStudentDemo.java: Recompile with -Xlint:unchecked for details.
+
+--- exec-maven-plugin:1.5.0:exec (default-cli) @ demo ---
+15:37:06.254 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+15:37:06.536 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+15:37:06.676 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+15:37:07.317 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+15:37:09.911 [main] INFO org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+15:37:09.957 [main] INFO org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+15:37:12.051 [main] DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+15:37:12.067 [main] DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+15:37:12.082 [main] DEBUG org.hibernate.boot.cfgxml.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/E:/Users/Wojtek/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+15:37:13.348 [main] DEBUG org.hibernate.cfg.Configuration - Building session factory using internal StandardServiceRegistryBuilder
+15:37:13.364 [main] DEBUG org.hibernate.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+15:37:13.364 [main] DEBUG org.hibernate.cfg.Configuration - Building session factory using provided StandardServiceRegistry
+15:37:13.520 [main] DEBUG org.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+15:37:13.520 [main] DEBUG org.hibernate.cache.internal.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+15:37:13.676 [main] INFO org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+15:37:14.286 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@5d25e6bb
+15:37:14.286 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@5d25e6bb
+15:37:14.286 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@5d25e6bb
+15:37:14.286 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5df417a7
+15:37:14.286 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1cb3ec38
+15:37:14.286 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@2f7a7219
+15:37:14.301 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@664a9613
+15:37:14.301 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@664a9613
+15:37:14.301 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@664a9613
+15:37:14.301 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@4985cbcb
+15:37:14.301 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@4985cbcb
+15:37:14.301 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4985cbcb
+15:37:14.301 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5217f3d0
+15:37:14.301 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5217f3d0
+15:37:14.301 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5217f3d0
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@7bf9b098
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@7bf9b098
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@7bf9b098
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@2c177f9e
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@2c177f9e
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@2c177f9e
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4f8969b0
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4f8969b0
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4f8969b0
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@2fab4aff
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@2fab4aff
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@2fab4aff
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@11dee337
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@11dee337
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@76a82f33
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@76a82f33
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@7cbee484
+15:37:14.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@7cbee484
+15:37:14.348 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@f19c9d2
+15:37:14.348 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@a77614d
+15:37:14.348 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@319dead1
+15:37:14.348 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@319dead1
+15:37:14.348 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@2f08c4b
+15:37:14.348 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@2f08c4b
+15:37:14.364 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@5ae76500
+15:37:14.364 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5ae76500
+15:37:14.364 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@60cf80e7
+15:37:14.364 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@60cf80e7
+15:37:14.395 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6cea706c
+15:37:14.395 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6cea706c
+15:37:14.395 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@1a69561c
+15:37:14.395 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@1a69561c
+15:37:14.395 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@19b30c92
+15:37:14.395 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@19b30c92
+15:37:14.395 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@7a138fc5
+15:37:14.395 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@7a138fc5
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7e70bd39
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7e70bd39
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@4de025bf
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@4de025bf
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@18cc679e
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@18cc679e
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@740abb5
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@740abb5
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@740abb5
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@578524c3
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@5398edd0
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@5398edd0
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@5398edd0
+15:37:14.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@182f1e9a
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@6db66836
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6db66836
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@e24ddd0
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@e24ddd0
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@3aa3193a
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@3aa3193a
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@23a9ba52
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@23a9ba52
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@64f857e7
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@64f857e7
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@1b822fcc
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@3b366632
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@3b366632
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@3b366632
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@245a26e1
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@245a26e1
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@245a26e1
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@407cf41
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@5aceec94
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@3670f00
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@3670f00
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@3670f00
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@1a2e2935
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@1a2e2935
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@1a2e2935
+15:37:14.426 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@1b9ea3e3
+15:37:14.442 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@5922ae77
+15:37:14.442 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@127e70c5
+15:37:14.442 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@127e70c5
+15:37:14.442 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7e0aadd0
+15:37:14.442 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@4628b1d3
+15:37:14.442 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4628b1d3
+15:37:14.457 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@1a6f2363
+15:37:14.457 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@1a6f2363
+15:37:14.457 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@641856
+15:37:14.457 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@76318a7d
+15:37:14.457 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@8ab78bc
+15:37:14.473 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@560513ce
+15:37:14.473 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@560513ce
+15:37:14.473 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@7d373bcf
+15:37:14.473 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@6d6bc158
+15:37:14.473 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5dda6f9
+15:37:14.473 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@10027fc9
+15:37:14.473 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@54afd745
+15:37:14.473 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@677dbd89
+15:37:14.473 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@fff25f1
+15:37:14.473 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@c00fff0
+15:37:14.551 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+15:37:14.551 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+15:37:14.582 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+15:37:14.582 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+15:37:14.582 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+15:37:14.598 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+15:37:14.598 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+15:37:14.598 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+15:37:14.598 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+15:37:14.598 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+15:37:14.598 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+15:37:14.598 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+15:37:14.598 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+15:37:14.598 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+15:37:14.598 [main] WARN org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+15:37:14.707 [main] INFO org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hb_student_tracker]
+15:37:14.707 [main] INFO org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=hbstudent, user=hbstudent}
+15:37:14.707 [main] INFO org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+15:37:14.723 [main] DEBUG org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+15:37:14.723 [main] INFO org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+15:37:15.176 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.5.5-10.1.37-MariaDB
+      major : 5
+      minor : 5
+15:37:15.176 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.39 ( Revision: 3289a357af6d09ecc1a10fd3c26e95183e5790ad )
+      major : 5
+      minor : 1
+15:37:15.176 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - JDBC version : 4.0
+15:37:15.426 [main] INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+15:37:15.520 [main] DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+15:37:15.520 [main] DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+15:37:15.551 [main] DEBUG org.hibernate.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+15:37:15.567 [main] DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1d01dfa5] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4a31c2ee]
+15:37:16.067 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.example.demo.onetomany.Instructor
+15:37:16.098 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+15:37:16.145 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Import with entity name Instructor
+15:37:16.145 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Bind entity com.example.demo.onetomany.Instructor on table instructor
+15:37:16.176 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor), mappingColumn=id, insertable=true, updatable=true, unique=false}
+15:37:16.176 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+15:37:16.176 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.onetomany.Instructor:id]
+15:37:16.176 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for id
+15:37:16.176 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property id
+15:37:16.176 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+15:37:16.192 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='instructor'}
+15:37:16.192 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor), mappingColumn=courses, insertable=true, updatable=true, unique=false}
+15:37:16.192 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor), mappingColumn=null, insertable=true, updatable=true, unique=false}
+15:37:16.192 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor), mappingColumn=element, insertable=true, updatable=true, unique=false}
+15:37:16.192 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor), mappingColumn=courses_KEY, insertable=true, updatable=true, unique=false}
+15:37:16.192 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='courses_KEY', referencedColumn='null', mappedBy='null'}
+15:37:16.192 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='instructor'}
+15:37:16.192 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='instructor'}
+15:37:16.192 [main] DEBUG org.hibernate.cfg.annotations.CollectionBinder - Collection role: com.example.demo.onetomany.Instructor.courses
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property courses
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor), mappingColumn=email, insertable=true, updatable=true, unique=false}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email with lazy=false
+15:37:16.254 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.onetomany.Instructor:email]
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for email
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property email
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+15:37:16.254 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.onetomany.Instructor:firstName]
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for firstName
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property firstName
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='instructor_detail_id', referencedColumn='', mappedBy=''}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor), mappingColumn=instructorDetail, insertable=true, updatable=true, unique=false}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property instructorDetail
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+15:37:16.254 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.onetomany.Instructor:lastName]
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for lastName
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property lastName
+15:37:16.254 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.example.demo.onetomany.Course
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Import with entity name Course
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Bind entity com.example.demo.onetomany.Course on table course
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(course), mappingColumn=id, insertable=true, updatable=true, unique=false}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+15:37:16.254 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.onetomany.Course:id]
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for id
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property id
+15:37:16.254 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='instructor_id', referencedColumn='', mappedBy=''}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(course), mappingColumn=instructor, insertable=true, updatable=true, unique=false}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property instructor
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(course), mappingColumn=title, insertable=true, updatable=true, unique=false}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property title with lazy=false
+15:37:16.254 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.onetomany.Course:title]
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for title
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property title
+15:37:16.254 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.example.demo.hibernate.entity.InstructorDetail
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Import with entity name InstructorDetail
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Bind entity com.example.demo.hibernate.entity.InstructorDetail on table instructor_detail
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor_detail), mappingColumn=id, insertable=true, updatable=true, unique=false}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+15:37:16.254 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.hibernate.entity.InstructorDetail:id]
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for id
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property id
+15:37:16.254 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor_detail), mappingColumn=hobby, insertable=true, updatable=true, unique=false}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property hobby with lazy=false
+15:37:16.254 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.hibernate.entity.InstructorDetail:hobby]
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for hobby
+15:37:16.254 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property hobby
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='instructorDetail'}
+15:37:16.254 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor_detail), mappingColumn=instructor, insertable=true, updatable=true, unique=false}
+15:37:16.270 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(instructor_detail), mappingColumn=youtube_channel, insertable=true, updatable=true, unique=false}
+15:37:16.270 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property youtubeChannel with lazy=false
+15:37:16.270 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.hibernate.entity.InstructorDetail:youtubeChannel]
+15:37:16.270 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for youtubeChannel
+15:37:16.270 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property youtubeChannel
+15:37:16.286 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+15:37:16.286 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for email
+15:37:16.286 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for firstName
+15:37:16.286 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for lastName
+15:37:16.286 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+15:37:16.286 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for title
+15:37:16.286 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+15:37:16.286 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for hobby
+15:37:16.286 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for youtubeChannel
+15:37:16.286 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [instructor]
+15:37:16.286 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [course]
+15:37:16.286 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [instructor_detail]
+15:37:16.286 [main] DEBUG org.hibernate.cfg.CollectionSecondPass - Second pass for collection: com.example.demo.onetomany.Instructor.courses
+15:37:16.301 [main] DEBUG org.hibernate.cfg.annotations.CollectionBinder - Binding a OneToMany: com.example.demo.onetomany.Instructor.courses through a foreign key
+15:37:16.301 [main] DEBUG org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: com.example.demo.onetomany.Instructor.courses -> course
+15:37:16.301 [main] DEBUG org.hibernate.cfg.annotations.TableBinder - Retrieving property com.example.demo.onetomany.Course.instructor
+15:37:16.301 [main] DEBUG org.hibernate.cfg.CollectionSecondPass - Mapped collection key: instructor_id, one-to-many: com.example.demo.onetomany.Course
+15:37:16.301 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property instructor
+15:37:16.301 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Processing association property references
+15:37:16.301 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Resolving reference to class: com.example.demo.onetomany.Instructor
+15:37:16.317 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Resolving reference to class: com.example.demo.hibernate.entity.InstructorDetail
+15:37:16.317 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Processing association property references
+15:37:16.317 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Resolving reference to class: com.example.demo.onetomany.Instructor
+15:37:16.317 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Resolving reference to class: com.example.demo.hibernate.entity.InstructorDetail
+15:37:16.555 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Building session factory
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: 2
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: null
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Connection release mode: AFTER_TRANSACTION
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - query : 
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - closed-handling : 
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - lists : 
+15:37:16.555 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - transactions : 
+15:37:16.836 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+15:37:16.836 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, dialect=org.hibernate.dialect.MySQLDialect, java.specification.version=11, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1250, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.class.path=E:\Users\Wojtek\Documents\NetBeansProjects\hibernate-demo1\target\classes;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.1.3.RELEASE\spring-boot-starter-data-jpa-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.1.3.RELEASE\spring-boot-starter-aop-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-aop\5.1.5.RELEASE\spring-aop-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\aspectj\aspectjweaver\1.9.2\aspectjweaver-1.9.2.jar;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.1.3.RELEASE\spring-boot-starter-jdbc-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-jdbc\5.1.5.RELEASE\spring-jdbc-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\javax\transaction\javax.transaction-api\1.3\javax.transaction-api-1.3.jar;E:\Users\Wojtek\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;E:\Users\Wojtek\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;E:\Users\Wojtek\.m2\repository\org\hibernate\hibernate-core\5.3.7.Final\hibernate-core-5.3.7.Final.jar;E:\Users\Wojtek\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;E:\Users\Wojtek\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;E:\Users\Wojtek\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;E:\Users\Wojtek\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;E:\Users\Wojtek\.m2\repository\com\fasterxml\classmate\1.4.0\classmate-1.4.0.jar;E:\Users\Wojtek\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;E:\Users\Wojtek\.m2\repository\org\springframework\data\spring-data-jpa\2.1.5.RELEASE\spring-data-jpa-2.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\data\spring-data-commons\2.1.5.RELEASE\spring-data-commons-2.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-orm\5.1.5.RELEASE\spring-orm-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-context\5.1.5.RELEASE\spring-context-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-tx\5.1.5.RELEASE\spring-tx-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-beans\5.1.5.RELEASE\spring-beans-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-aspects\5.1.5.RELEASE\spring-aspects-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\2.1.3.RELEASE\spring-boot-starter-thymeleaf-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.3.RELEASE\spring-boot-starter-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.3.RELEASE\spring-boot-starter-logging-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;E:\Users\Wojtek\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;E:\Users\Wojtek\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.2\log4j-to-slf4j-2.11.2.jar;E:\Users\Wojtek\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;E:\Users\Wojtek\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;E:\Users\Wojtek\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;E:\Users\Wojtek\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;E:\Users\Wojtek\.m2\repository\org\thymeleaf\thymeleaf-spring5\3.0.11.RELEASE\thymeleaf-spring5-3.0.11.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\thymeleaf\thymeleaf\3.0.11.RELEASE\thymeleaf-3.0.11.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\thymeleaf\extras\thymeleaf-extras-java8time\3.0.3.RELEASE\thymeleaf-extras-java8time-3.0.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.1.3.RELEASE\spring-boot-starter-web-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.1.3.RELEASE\spring-boot-starter-json-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;E:\Users\Wojtek\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;E:\Users\Wojtek\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;E:\Users\Wojtek\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.8\jackson-datatype-jdk8-2.9.8.jar;E:\Users\Wojtek\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.8\jackson-datatype-jsr310-2.9.8.jar;E:\Users\Wojtek\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.8\jackson-module-parameter-names-2.9.8.jar;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.1.3.RELEASE\spring-boot-starter-tomcat-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.16\tomcat-embed-core-9.0.16.jar;E:\Users\Wojtek\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.16\tomcat-embed-el-9.0.16.jar;E:\Users\Wojtek\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.16\tomcat-embed-websocket-9.0.16.jar;E:\Users\Wojtek\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.14.Final\hibernate-validator-6.0.14.Final.jar;E:\Users\Wojtek\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-web\5.1.5.RELEASE\spring-web-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-webmvc\5.1.5.RELEASE\spring-webmvc-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-expression\5.1.5.RELEASE\spring-expression-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot-devtools\2.1.3.RELEASE\spring-boot-devtools-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot\2.1.3.RELEASE\spring-boot-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.3.RELEASE\spring-boot-autoconfigure-2.1.3.RELEASE.jar;E:\Users\Wojtek\.m2\repository\mysql\mysql-connector-java\5.1.39\mysql-connector-java-5.1.39.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-core\5.1.5.RELEASE\spring-core-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\springframework\spring-jcl\5.1.5.RELEASE\spring-jcl-5.1.5.RELEASE.jar;E:\Users\Wojtek\.m2\repository\org\hibernate\hibernate-entitymanager\4.3.1.Final\hibernate-entitymanager-4.3.1.Final.jar;E:\Users\Wojtek\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;E:\Users\Wojtek\.m2\repository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;E:\Users\Wojtek\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;E:\Users\Wojtek\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.4.Final\hibernate-commons-annotations-4.0.4.Final.jar;E:\Users\Wojtek\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;E:\Users\Wojtek\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;E:\Users\Wojtek\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;E:\Users\Wojtek\.m2\repository\unknown\binary\mysql-connector-java-5.1.13-bin\SNAPSHOT\mysql-connector-java-5.1.13-bin-SNAPSHOT.jar;E:\Users\Wojtek\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.0\jaxb-impl-2.3.0.jar;E:\Users\Wojtek\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, hbm2ddl.auto=update, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=Europe/Belgrade, os.name=Windows 10, java.vm.specification.version=11, current_session_context_class=thread, sun.java.launcher=SUN_STANDARD, user.country=PL, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.2\bin, sun.java.command=com.example.demo.onetomany.GetInstructorCoursesDemo, jdk.debug=release, sun.cpu.endian=little, user.home=E:\Users\Wojtek, user.language=pl, java.specification.vendor=Oracle Corporation, java.version.date=2019-01-15, java.home=C:\Program Files\Java\jdk-11.0.2, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, hibernate.hbm2ddl.auto=update, user.script=, connection.password=hbstudent, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.2+9-LTS, user.name=Wojtek, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/hb_student_tracker, connection.pool_size=1, file.encoding=Cp1250, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=18.9, hibernate.current_session_context_class=thread, show_sql=true, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=http://bugreport.java.com/bugreport/, java.io.tmpdir=E:\Users\Wojtek\AppData\Local\Temp\, java.version=11.0.2, user.dir=E:\Users\Wojtek\Documents\NetBeansProjects\hibernate-demo1, os.arch=amd64, connection.username=hbstudent, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, hibernate.connection.password=****, sun.os.patch.level=, connection.driver_class=com.mysql.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@5acc9fdf, java.library.path=C:\Program Files\Java\jdk-11.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Program Files\Git\cmd;C:\Program Files\Java\jdk-11.0.2\bin;;D:\PostgreSQL\pg11\bin;E:\Users\Wojtek\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.4\bin;;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.2+9-LTS, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.pool_size=1, connection.url=jdbc:mysql://localhost:3306/hb_student_tracker, java.class.version=55.0}
+15:37:17.211 [main] INFO org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.14.Final
+15:37:17.348 [main] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:37:17.364 [main] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:37:17.426 [main] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+15:37:17.426 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+15:37:17.442 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+15:37:17.442 [main] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+15:37:18.192 [main] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+15:37:18.208 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+15:37:18.208 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+15:37:18.208 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+15:37:18.208 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+15:37:18.208 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+15:37:18.208 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.onetomany.Instructor] is safe
+15:37:18.208 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.onetomany.Instructor
+15:37:18.364 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.hibernate.entity.InstructorDetail] is safe
+15:37:18.364 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.hibernate.entity.InstructorDetail
+15:37:18.364 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.onetomany.Course] is safe
+15:37:18.364 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.onetomany.Course
+15:37:18.379 [main] DEBUG org.hibernate.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+15:37:18.379 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Instantiated session factory
+15:37:18.379 [main] DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1d01dfa5] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@39a87e72]
+15:37:18.629 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.onetomany.Instructor] is safe
+15:37:18.629 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.onetomany.Instructor
+15:37:18.645 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.onetomany.Instructor] is safe
+15:37:18.645 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.onetomany.Instructor
+15:37:20.364 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.hibernate.entity.InstructorDetail] is safe
+15:37:20.364 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.hibernate.entity.InstructorDetail
+15:37:20.364 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.hibernate.entity.InstructorDetail] is safe
+15:37:20.364 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.hibernate.entity.InstructorDetail
+15:37:20.379 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.onetomany.Course] is safe
+15:37:20.379 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.onetomany.Course
+15:37:20.379 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.onetomany.Course] is safe
+15:37:20.379 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.onetomany.Course
+15:37:20.489 [main] DEBUG org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: com.example.demo.onetomany.Instructor.courses
+15:37:20.489 [main] DEBUG org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: update course set instructor_id=? where id=?
+15:37:20.489 [main] DEBUG org.hibernate.persister.collection.AbstractCollectionPersister -  Row update: update course set  where id=?
+15:37:20.489 [main] DEBUG org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: update course set instructor_id=null where instructor_id=? and id=?
+15:37:20.489 [main] DEBUG org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: update course set instructor_id=null where instructor_id=?
+15:37:20.504 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.example.demo.onetomany.Instructor
+15:37:20.504 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from instructor where id =?
+15:37:20.504 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select instructor_.id, instructor_.email as email2_1_, instructor_.first_name as first_na3_1_, instructor_.instructor_detail_id as instruct5_1_, instructor_.last_name as last_nam4_1_ from instructor instructor_ where instructor_.id=?
+15:37:20.504 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into instructor (email, first_name, instructor_detail_id, last_name, id) values (?, ?, ?, ?, ?)
+15:37:20.504 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update instructor set email=?, first_name=?, instructor_detail_id=?, last_name=? where id=?
+15:37:20.504 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from instructor where id=?
+15:37:20.504 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into instructor (email, first_name, instructor_detail_id, last_name) values (?, ?, ?, ?)
+15:37:20.786 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@41ccb3b9]
+15:37:20.786 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : courses
+15:37:20.786 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1b482cbf]
+15:37:20.786 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@55b5cd2b]
+15:37:20.786 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+15:37:20.786 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstName
+15:37:20.786 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructorDetail
+15:37:20.786 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7645f03e]
+15:37:20.786 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructorDetail.hobby
+15:37:20.786 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructorDetail.youtubeChannel
+15:37:20.786 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructorDetail.instructor
+15:37:20.786 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : instructorDetail.instructor
+15:37:20.786 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : lastName
+15:37:20.786 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+15:37:20.801 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+15:37:20.801 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.example.demo.onetomany.Instructor)
+    - Returns
+       - EntityReturnImpl(entity=com.example.demo.onetomany.Instructor, querySpaceUid=<gen:0>, path=com.example.demo.onetomany.Instructor)
+          - CollectionAttributeFetchImpl(collection=com.example.demo.onetomany.Instructor.courses, querySpaceUid=<gen:1>, path=com.example.demo.onetomany.Instructor.courses)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.demo.onetomany.Course, querySpaceUid=<gen:2>, path=com.example.demo.onetomany.Instructor.courses.<elements>)
+          - EntityAttributeFetchImpl(entity=com.example.demo.hibernate.entity.InstructorDetail, querySpaceUid=<gen:3>, path=com.example.demo.onetomany.Instructor.instructorDetail)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.demo.onetomany.Instructor)
+          - SQL table alias mapping - instructor0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(instructorDetail)) : <gen:0> -> <gen:3>
+             - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.example.demo.hibernate.entity.InstructorDetail)
+                - SQL table alias mapping - instructor1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+
+15:37:20.801 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.example.demo.onetomany.Instructor [NONE]: select instructor0_.id as id1_1_0_, instructor0_.email as email2_1_0_, instructor0_.first_name as first_na3_1_0_, instructor0_.instructor_detail_id as instruct5_1_0_, instructor0_.last_name as last_nam4_1_0_, instructor1_.id as id1_2_1_, instructor1_.hobby as hobby2_2_1_, instructor1_.youtube_channel as youtube_3_2_1_ from instructor instructor0_ left outer join instructor_detail instructor1_ on instructor0_.instructor_detail_id=instructor1_.id where instructor0_.id=?
+15:37:20.801 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@52226e57]
+15:37:20.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : courses
+15:37:20.801 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5fcd1c5f]
+15:37:20.801 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3cc30dee]
+15:37:20.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+15:37:20.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstName
+15:37:20.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructorDetail
+15:37:20.801 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7d528cf7]
+15:37:20.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructorDetail.hobby
+15:37:20.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructorDetail.youtubeChannel
+15:37:20.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructorDetail.instructor
+15:37:20.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : instructorDetail.instructor
+15:37:20.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : lastName
+15:37:20.801 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+15:37:20.801 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+15:37:20.801 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.example.demo.onetomany.Instructor)
+    - Returns
+       - EntityReturnImpl(entity=com.example.demo.onetomany.Instructor, querySpaceUid=<gen:0>, path=com.example.demo.onetomany.Instructor)
+          - CollectionAttributeFetchImpl(collection=com.example.demo.onetomany.Instructor.courses, querySpaceUid=<gen:1>, path=com.example.demo.onetomany.Instructor.courses)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.demo.onetomany.Course, querySpaceUid=<gen:2>, path=com.example.demo.onetomany.Instructor.courses.<elements>)
+          - EntityAttributeFetchImpl(entity=com.example.demo.hibernate.entity.InstructorDetail, querySpaceUid=<gen:3>, path=com.example.demo.onetomany.Instructor.instructorDetail)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.demo.onetomany.Instructor)
+          - SQL table alias mapping - instructor0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(instructorDetail)) : <gen:0> -> <gen:3>
+             - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.example.demo.hibernate.entity.InstructorDetail)
+                - SQL table alias mapping - instructor1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+
+15:37:20.801 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.example.demo.onetomany.Instructor [READ]: select instructor0_.id as id1_1_0_, instructor0_.email as email2_1_0_, instructor0_.first_name as first_na3_1_0_, instructor0_.instructor_detail_id as instruct5_1_0_, instructor0_.last_name as last_nam4_1_0_, instructor1_.id as id1_2_1_, instructor1_.hobby as hobby2_2_1_, instructor1_.youtube_channel as youtube_3_2_1_ from instructor instructor0_ left outer join instructor_detail instructor1_ on instructor0_.instructor_detail_id=instructor1_.id where instructor0_.id=?
+15:37:20.864 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.example.demo.onetomany.Instructor: select instructor0_.id as id1_1_2_, instructor0_.email as email2_1_2_, instructor0_.first_name as first_na3_1_2_, instructor0_.instructor_detail_id as instruct5_1_2_, instructor0_.last_name as last_nam4_1_2_, courses1_.instructor_id as instruct3_0_4_, courses1_.id as id1_0_4_, courses1_.id as id1_0_0_, courses1_.instructor_id as instruct3_0_0_, courses1_.title as title2_0_0_, instructor2_.id as id1_2_1_, instructor2_.hobby as hobby2_2_1_, instructor2_.youtube_channel as youtube_3_2_1_ from instructor instructor0_ left outer join course courses1_ on instructor0_.id=courses1_.instructor_id left outer join instructor_detail instructor2_ on instructor0_.instructor_detail_id=instructor2_.id where instructor0_.id=?
+15:37:20.864 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.example.demo.onetomany.Instructor: select instructor0_.id as id1_1_2_, instructor0_.email as email2_1_2_, instructor0_.first_name as first_na3_1_2_, instructor0_.instructor_detail_id as instruct5_1_2_, instructor0_.last_name as last_nam4_1_2_, courses1_.instructor_id as instruct3_0_4_, courses1_.id as id1_0_4_, courses1_.id as id1_0_0_, courses1_.instructor_id as instruct3_0_0_, courses1_.title as title2_0_0_, instructor2_.id as id1_2_1_, instructor2_.hobby as hobby2_2_1_, instructor2_.youtube_channel as youtube_3_2_1_ from instructor instructor0_ left outer join course courses1_ on instructor0_.id=courses1_.instructor_id left outer join instructor_detail instructor2_ on instructor0_.instructor_detail_id=instructor2_.id where instructor0_.id=?
+15:37:20.864 [main] DEBUG org.hibernate.loader.Loader - Static select for entity com.example.demo.onetomany.Instructor [NONE]: select instructor0_.id as id1_1_1_, instructor0_.email as email2_1_1_, instructor0_.first_name as first_na3_1_1_, instructor0_.instructor_detail_id as instruct5_1_1_, instructor0_.last_name as last_nam4_1_1_, instructor1_.id as id1_2_0_, instructor1_.hobby as hobby2_2_0_, instructor1_.youtube_channel as youtube_3_2_0_ from instructor instructor0_ left outer join instructor_detail instructor1_ on instructor0_.instructor_detail_id=instructor1_.id where instructor0_.instructor_detail_id=?
+15:37:20.864 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.example.demo.hibernate.entity.InstructorDetail
+15:37:20.864 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from instructor_detail where id =?
+15:37:20.864 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select instructor_.id, instructor_.hobby as hobby2_2_, instructor_.youtube_channel as youtube_3_2_ from instructor_detail instructor_ where instructor_.id=?
+15:37:20.864 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into instructor_detail (hobby, youtube_channel, id) values (?, ?, ?)
+15:37:20.864 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update instructor_detail set hobby=?, youtube_channel=? where id=?
+15:37:20.864 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from instructor_detail where id=?
+15:37:20.864 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into instructor_detail (hobby, youtube_channel) values (?, ?)
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@546394ed]
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : hobby
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : youtubeChannel
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2693c618]
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.courses
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@7ccfdaef]
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@a6e4897]
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.email
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.firstName
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.instructorDetail
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : instructor.instructorDetail
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.lastName
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.example.demo.hibernate.entity.InstructorDetail)
+    - Returns
+       - EntityReturnImpl(entity=com.example.demo.hibernate.entity.InstructorDetail, querySpaceUid=<gen:0>, path=com.example.demo.hibernate.entity.InstructorDetail)
+          - EntityAttributeFetchImpl(entity=com.example.demo.onetomany.Instructor, querySpaceUid=<gen:1>, path=com.example.demo.hibernate.entity.InstructorDetail.instructor)
+             - CollectionAttributeFetchImpl(collection=com.example.demo.onetomany.Instructor.courses, querySpaceUid=<gen:2>, path=com.example.demo.hibernate.entity.InstructorDetail.instructor.courses)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.demo.onetomany.Course, querySpaceUid=<gen:3>, path=com.example.demo.hibernate.entity.InstructorDetail.instructor.courses.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.demo.hibernate.entity.InstructorDetail)
+          - SQL table alias mapping - instructor0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(instructor)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.example.demo.onetomany.Instructor)
+                - SQL table alias mapping - instructor1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+15:37:20.864 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.example.demo.hibernate.entity.InstructorDetail [NONE]: select instructor0_.id as id1_2_0_, instructor0_.hobby as hobby2_2_0_, instructor0_.youtube_channel as youtube_3_2_0_, instructor1_.id as id1_1_1_, instructor1_.email as email2_1_1_, instructor1_.first_name as first_na3_1_1_, instructor1_.instructor_detail_id as instruct5_1_1_, instructor1_.last_name as last_nam4_1_1_ from instructor_detail instructor0_ left outer join instructor instructor1_ on instructor0_.id=instructor1_.instructor_detail_id where instructor0_.id=?
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@32f5ecc4]
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : hobby
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : youtubeChannel
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ba467c2]
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.courses
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@7ef8eda7]
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@115ca7de]
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.email
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.firstName
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.instructorDetail
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : instructor.instructorDetail
+15:37:20.864 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.lastName
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+15:37:20.864 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.example.demo.hibernate.entity.InstructorDetail)
+    - Returns
+       - EntityReturnImpl(entity=com.example.demo.hibernate.entity.InstructorDetail, querySpaceUid=<gen:0>, path=com.example.demo.hibernate.entity.InstructorDetail)
+          - EntityAttributeFetchImpl(entity=com.example.demo.onetomany.Instructor, querySpaceUid=<gen:1>, path=com.example.demo.hibernate.entity.InstructorDetail.instructor)
+             - CollectionAttributeFetchImpl(collection=com.example.demo.onetomany.Instructor.courses, querySpaceUid=<gen:2>, path=com.example.demo.hibernate.entity.InstructorDetail.instructor.courses)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.demo.onetomany.Course, querySpaceUid=<gen:3>, path=com.example.demo.hibernate.entity.InstructorDetail.instructor.courses.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.demo.hibernate.entity.InstructorDetail)
+          - SQL table alias mapping - instructor0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(instructor)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.example.demo.onetomany.Instructor)
+                - SQL table alias mapping - instructor1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+15:37:20.864 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.example.demo.hibernate.entity.InstructorDetail [READ]: select instructor0_.id as id1_2_0_, instructor0_.hobby as hobby2_2_0_, instructor0_.youtube_channel as youtube_3_2_0_, instructor1_.id as id1_1_1_, instructor1_.email as email2_1_1_, instructor1_.first_name as first_na3_1_1_, instructor1_.instructor_detail_id as instruct5_1_1_, instructor1_.last_name as last_nam4_1_1_ from instructor_detail instructor0_ left outer join instructor instructor1_ on instructor0_.id=instructor1_.instructor_detail_id where instructor0_.id=?
+15:37:20.864 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.example.demo.hibernate.entity.InstructorDetail: select instructor0_.id as id1_2_2_, instructor0_.hobby as hobby2_2_2_, instructor0_.youtube_channel as youtube_3_2_2_, instructor1_.id as id1_1_0_, instructor1_.email as email2_1_0_, instructor1_.first_name as first_na3_1_0_, instructor1_.instructor_detail_id as instruct5_1_0_, instructor1_.last_name as last_nam4_1_0_, courses2_.instructor_id as instruct3_0_4_, courses2_.id as id1_0_4_, courses2_.id as id1_0_1_, courses2_.instructor_id as instruct3_0_1_, courses2_.title as title2_0_1_ from instructor_detail instructor0_ left outer join instructor instructor1_ on instructor0_.id=instructor1_.instructor_detail_id left outer join course courses2_ on instructor1_.id=courses2_.instructor_id where instructor0_.id=?
+15:37:20.879 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.example.demo.hibernate.entity.InstructorDetail: select instructor0_.id as id1_2_2_, instructor0_.hobby as hobby2_2_2_, instructor0_.youtube_channel as youtube_3_2_2_, instructor1_.id as id1_1_0_, instructor1_.email as email2_1_0_, instructor1_.first_name as first_na3_1_0_, instructor1_.instructor_detail_id as instruct5_1_0_, instructor1_.last_name as last_nam4_1_0_, courses2_.instructor_id as instruct3_0_4_, courses2_.id as id1_0_4_, courses2_.id as id1_0_1_, courses2_.instructor_id as instruct3_0_1_, courses2_.title as title2_0_1_ from instructor_detail instructor0_ left outer join instructor instructor1_ on instructor0_.id=instructor1_.instructor_detail_id left outer join course courses2_ on instructor1_.id=courses2_.instructor_id where instructor0_.id=?
+15:37:20.879 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.example.demo.onetomany.Course
+15:37:20.879 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from course where id =?
+15:37:20.879 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select course_.id, course_.instructor_id as instruct3_0_, course_.title as title2_0_ from course course_ where course_.id=?
+15:37:20.879 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into course (instructor_id, title, id) values (?, ?, ?)
+15:37:20.879 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update course set instructor_id=?, title=? where id=?
+15:37:20.879 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from course where id=?
+15:37:20.879 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into course (instructor_id, title) values (?, ?)
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29fe4840]
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4684240f]
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.courses
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : instructor.courses
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.email
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.firstName
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.instructorDetail
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6975fb1c]
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.instructorDetail.hobby
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.instructorDetail.youtubeChannel
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.instructorDetail.instructor
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : instructor.instructorDetail.instructor
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.lastName
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.example.demo.onetomany.Course)
+    - Returns
+       - EntityReturnImpl(entity=com.example.demo.onetomany.Course, querySpaceUid=<gen:0>, path=com.example.demo.onetomany.Course)
+          - EntityAttributeFetchImpl(entity=com.example.demo.onetomany.Instructor, querySpaceUid=<gen:1>, path=com.example.demo.onetomany.Course.instructor)
+             - EntityAttributeFetchImpl(entity=com.example.demo.hibernate.entity.InstructorDetail, querySpaceUid=<gen:2>, path=com.example.demo.onetomany.Course.instructor.instructorDetail)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.demo.onetomany.Course)
+          - SQL table alias mapping - course0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(instructor)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.example.demo.onetomany.Instructor)
+                - SQL table alias mapping - instructor1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+                - JOIN (JoinDefinedByMetadata(instructorDetail)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.example.demo.hibernate.entity.InstructorDetail)
+                      - SQL table alias mapping - instructor2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_2_2_}
+
+15:37:20.879 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.example.demo.onetomany.Course [NONE]: select course0_.id as id1_0_0_, course0_.instructor_id as instruct3_0_0_, course0_.title as title2_0_0_, instructor1_.id as id1_1_1_, instructor1_.email as email2_1_1_, instructor1_.first_name as first_na3_1_1_, instructor1_.instructor_detail_id as instruct5_1_1_, instructor1_.last_name as last_nam4_1_1_, instructor2_.id as id1_2_2_, instructor2_.hobby as hobby2_2_2_, instructor2_.youtube_channel as youtube_3_2_2_ from course course0_ left outer join instructor instructor1_ on course0_.instructor_id=instructor1_.id left outer join instructor_detail instructor2_ on instructor1_.instructor_detail_id=instructor2_.id where course0_.id=?
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@327e5be5]
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@566f1852]
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.courses
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : instructor.courses
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.email
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.firstName
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.instructorDetail
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2e4389ed]
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.instructorDetail.hobby
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.instructorDetail.youtubeChannel
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.instructorDetail.instructor
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : instructor.instructorDetail.instructor
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor.lastName
+15:37:20.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+15:37:20.879 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.example.demo.onetomany.Course)
+    - Returns
+       - EntityReturnImpl(entity=com.example.demo.onetomany.Course, querySpaceUid=<gen:0>, path=com.example.demo.onetomany.Course)
+          - EntityAttributeFetchImpl(entity=com.example.demo.onetomany.Instructor, querySpaceUid=<gen:1>, path=com.example.demo.onetomany.Course.instructor)
+             - EntityAttributeFetchImpl(entity=com.example.demo.hibernate.entity.InstructorDetail, querySpaceUid=<gen:2>, path=com.example.demo.onetomany.Course.instructor.instructorDetail)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.demo.onetomany.Course)
+          - SQL table alias mapping - course0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(instructor)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.example.demo.onetomany.Instructor)
+                - SQL table alias mapping - instructor1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+                - JOIN (JoinDefinedByMetadata(instructorDetail)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.example.demo.hibernate.entity.InstructorDetail)
+                      - SQL table alias mapping - instructor2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_2_2_}
+
+15:37:20.879 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.example.demo.onetomany.Course [READ]: select course0_.id as id1_0_0_, course0_.instructor_id as instruct3_0_0_, course0_.title as title2_0_0_, instructor1_.id as id1_1_1_, instructor1_.email as email2_1_1_, instructor1_.first_name as first_na3_1_1_, instructor1_.instructor_detail_id as instruct5_1_1_, instructor1_.last_name as last_nam4_1_1_, instructor2_.id as id1_2_2_, instructor2_.hobby as hobby2_2_2_, instructor2_.youtube_channel as youtube_3_2_2_ from course course0_ left outer join instructor instructor1_ on course0_.instructor_id=instructor1_.id left outer join instructor_detail instructor2_ on instructor1_.instructor_detail_id=instructor2_.id where course0_.id=?
+15:37:20.879 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.example.demo.onetomany.Course: select course0_.id as id1_0_2_, course0_.instructor_id as instruct3_0_2_, course0_.title as title2_0_2_, instructor1_.id as id1_1_0_, instructor1_.email as email2_1_0_, instructor1_.first_name as first_na3_1_0_, instructor1_.instructor_detail_id as instruct5_1_0_, instructor1_.last_name as last_nam4_1_0_, instructor2_.id as id1_2_1_, instructor2_.hobby as hobby2_2_1_, instructor2_.youtube_channel as youtube_3_2_1_ from course course0_ left outer join instructor instructor1_ on course0_.instructor_id=instructor1_.id left outer join instructor_detail instructor2_ on instructor1_.instructor_detail_id=instructor2_.id where course0_.id=?
+15:37:20.879 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.example.demo.onetomany.Course: select course0_.id as id1_0_2_, course0_.instructor_id as instruct3_0_2_, course0_.title as title2_0_2_, instructor1_.id as id1_1_0_, instructor1_.email as email2_1_0_, instructor1_.first_name as first_na3_1_0_, instructor1_.instructor_detail_id as instruct5_1_0_, instructor1_.last_name as last_nam4_1_0_, instructor2_.id as id1_2_1_, instructor2_.hobby as hobby2_2_1_, instructor2_.youtube_channel as youtube_3_2_1_ from course course0_ left outer join instructor instructor1_ on course0_.instructor_id=instructor1_.id left outer join instructor_detail instructor2_ on instructor1_.instructor_detail_id=instructor2_.id where course0_.id=?
+15:37:20.958 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2d2b6960]
+15:37:20.958 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@38291795]
+15:37:20.958 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : instructor
+15:37:20.958 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : instructor
+15:37:20.958 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+15:37:20.958 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+15:37:20.958 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+15:37:20.958 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.example.demo.onetomany.Instructor.courses)
+    - Returns
+       - CollectionReturnImpl(collection=com.example.demo.onetomany.Instructor.courses, querySpaceUid=<gen:0>, path=[com.example.demo.onetomany.Instructor.courses])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.demo.onetomany.Course, querySpaceUid=<gen:1>, path=[com.example.demo.onetomany.Instructor.courses].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.example.demo.onetomany.Instructor.courses)
+          - SQL table alias mapping - courses0_
+          - alias suffix - 0_
+          - suffixed key columns - {instruct3_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.example.demo.onetomany.Course)
+                - SQL table alias mapping - courses0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+15:37:20.973 [main] DEBUG org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.example.demo.onetomany.Instructor.courses: select courses0_.instructor_id as instruct3_0_0_, courses0_.id as id1_0_0_, courses0_.id as id1_0_1_, courses0_.instructor_id as instruct3_0_1_, courses0_.title as title2_0_1_ from course courses0_ where courses0_.instructor_id=?
+15:37:21.145 [main] INFO org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4391a2d8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+15:37:21.551 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : course
+15:37:21.551 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : instructor
+15:37:21.551 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : instructor_detail
+15:37:21.583 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository - Checking 0 named HQL queries
+15:37:21.583 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+15:37:21.583 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@5403799b
+15:37:21.583 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: 1c6eca91-f60f-42aa-8f7f-c0abf73f27bb (<unnamed>)
+15:37:21.583 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+15:37:21.723 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+15:37:21.723 [main] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+15:37:21.754 [main] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - begin
+
+
+Before getting the instructor
+
+
+15:37:21.754 [main] DEBUG org.hibernate.SQL - select instructor0_.id as id1_1_0_, instructor0_.email as email2_1_0_, instructor0_.first_name as first_na3_1_0_, instructor0_.instructor_detail_id as instruct5_1_0_, instructor0_.last_name as last_nam4_1_0_, instructor1_.id as id1_2_1_, instructor1_.hobby as hobby2_2_1_, instructor1_.youtube_channel as youtube_3_2_1_ from instructor instructor0_ left outer join instructor_detail instructor1_ on instructor0_.instructor_detail_id=instructor1_.id where instructor0_.id=?
+Hibernate: select instructor0_.id as id1_1_0_, instructor0_.email as email2_1_0_, instructor0_.first_name as first_na3_1_0_, instructor0_.instructor_detail_id as instruct5_1_0_, instructor0_.last_name as last_nam4_1_0_, instructor1_.id as id1_2_1_, instructor1_.hobby as hobby2_2_1_, instructor1_.youtube_channel as youtube_3_2_1_ from instructor instructor0_ left outer join instructor_detail instructor1_ on instructor0_.instructor_detail_id=instructor1_.id where instructor0_.id=?
+15:37:21.770 [main] DEBUG org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl - Starting ResultSet row #0
+15:37:21.770 [main] DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+15:37:21.817 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [com.example.demo.onetomany.Instructor#1]
+15:37:21.911 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.onetomany.Instructor#1]
+15:37:21.911 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [com.example.demo.hibernate.entity.InstructorDetail#1]
+15:37:21.911 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.hibernate.entity.InstructorDetail#1]
+15:37:21.911 [main] DEBUG org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+15:37:21.911 [main] DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader - Done entity load : com.example.demo.onetomany.Instructor#1
+
+
+After getting the instructor
+
+
+15:37:21.911 [main] DEBUG org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.example.demo.onetomany.Instructor.courses#1]
+15:37:21.911 [main] DEBUG org.hibernate.SQL - select courses0_.instructor_id as instruct3_0_0_, courses0_.id as id1_0_0_, courses0_.id as id1_0_1_, courses0_.instructor_id as instruct3_0_1_, courses0_.title as title2_0_1_ from course courses0_ where courses0_.instructor_id=?
+Hibernate: select courses0_.instructor_id as instruct3_0_0_, courses0_.id as id1_0_0_, courses0_.id as id1_0_1_, courses0_.instructor_id as instruct3_0_1_, courses0_.title as title2_0_1_ from course courses0_ where courses0_.instructor_id=?
+15:37:21.911 [main] DEBUG org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl - Preparing collection intializer : [com.example.demo.onetomany.Instructor.courses#1]
+15:37:21.926 [main] DEBUG org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl - Starting ResultSet row #0
+15:37:21.926 [main] DEBUG org.hibernate.loader.plan.exec.process.internal.CollectionReferenceInitializerImpl - Found row of collection: [com.example.demo.onetomany.Instructor.courses#1]
+15:37:21.926 [main] DEBUG org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl - Starting ResultSet row #1
+15:37:21.926 [main] DEBUG org.hibernate.loader.plan.exec.process.internal.CollectionReferenceInitializerImpl - Found row of collection: [com.example.demo.onetomany.Instructor.courses#1]
+15:37:21.926 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [com.example.demo.onetomany.Course#10]
+15:37:21.926 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.onetomany.Course#10]
+15:37:21.926 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [com.example.demo.onetomany.Course#11]
+15:37:21.926 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.onetomany.Course#11]
+15:37:21.926 [main] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - 1 collections were found in result set for role: com.example.demo.onetomany.Instructor.courses
+15:37:21.926 [main] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - Collection fully initialized: [com.example.demo.onetomany.Instructor.courses#1]
+15:37:21.926 [main] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - 1 collections initialized for role: com.example.demo.onetomany.Instructor.courses
+15:37:21.926 [main] DEBUG org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+15:37:21.926 [main] DEBUG org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+
+
+Zamykam dupê...
+
+
+15:37:21.989 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - HHH000031: Closing
+15:37:21.989 [main] DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@548e43b1] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@39a87e72]
+15:37:21.989 [main] DEBUG org.hibernate.service.internal.AbstractServiceRegistryImpl - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+15:37:21.989 [main] INFO org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/hb_student_tracker]
+15:37:21.989 [main] DEBUG org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+
+Dupa zamkniêta pomyœlnie :-)
+
+Exception in thread "main" java.lang.StackOverflowError
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:248)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Course.toString(Course.java:65)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:473)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:538)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at com.example.demo.onetomany.Instructor.toString(Instructor.java:104)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+Command execution failed.
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.codehaus.mojo.exec.ExecMojo.executeCommandLine(ExecMojo.java:764)
+	at org.codehaus.mojo.exec.ExecMojo.executeCommandLine(ExecMojo.java:711)
+	at org.codehaus.mojo.exec.ExecMojo.execute(ExecMojo.java:289)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+------------------------------------------------------------------------
+BUILD FAILURE
+------------------------------------------------------------------------
+Total time: 26.202 s
+Finished at: 2019-02-17T15:37:22+01:00
+Final Memory: 33M/114M
+------------------------------------------------------------------------
+Failed to execute goal org.codehaus.mojo:exec-maven-plugin:1.5.0:exec (default-cli) on project demo: Command execution failed. Process exited with an error: 1 (Exit value: 1) -> [Help 1]
+
+To see the full stack trace of the errors, re-run Maven with the -e switch.
+Re-run Maven using the -X switch to enable full debug logging.
+
+For more information about the errors and possible solutions, please read the following articles:
+[Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
